@@ -6,7 +6,7 @@ public class FlipGravityOnCollision : MonoBehaviour
 {
     bool normalGravity = true;
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log("b");
         if (collision.gameObject.layer == 6)
