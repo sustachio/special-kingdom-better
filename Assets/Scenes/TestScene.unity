@@ -5803,7 +5803,7 @@ ParticleSystemRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_RenderMode: 3
+  m_RenderMode: 0
   m_MeshDistribution: 0
   m_SortMode: 0
   m_MinParticleSize: 0
@@ -6023,7 +6023,7 @@ ParticleSystem:
       serializedVersion: 2
       minMaxState: 0
       minColor: {r: 1, g: 1, b: 1, a: 1}
-      maxColor: {r: 0.10435206, g: 0.3000777, b: 0.6320754, a: 1}
+      maxColor: {r: 0.03760237, g: 0.07632747, b: 0.6132076, a: 1}
       maxGradient:
         serializedVersion: 2
         key0: {r: 1, g: 1, b: 1, a: 1}
@@ -6085,7 +6085,7 @@ ParticleSystem:
     startSize:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.2
+      scalar: 0.4
       minScalar: 1
       maxCurve:
         serializedVersion: 2
@@ -6667,7 +6667,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 100
+      scalar: 200
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -19771,8 +19771,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   miniMapDisplay: {fileID: 1567151357}
   miniMapPanel: {fileID: 1689390861}
-  miniMapActive: 0
-  mapDisabler: 9
+  miniMapInt: 0
+  mapDisabler: 109
 --- !u!1 &1501296790
 GameObject:
   m_ObjectHideFlags: 0

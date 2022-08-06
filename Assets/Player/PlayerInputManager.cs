@@ -7,7 +7,7 @@ public class PlayerInputManager : MonoBehaviour
 {
     [SerializeField] GameObject miniMapDisplay;
     [SerializeField] GameObject miniMapPanel;
-    [SerializeField] bool miniMapActive;
+    [SerializeField] int miniMapInt;
 
     [SerializeField] KeyCode mapDisabler;
 
@@ -15,22 +15,24 @@ public class PlayerInputManager : MonoBehaviour
     void Start()
     {
         miniMapDisplay.SetActive(true);
-        miniMapActive = true;
+        miniMapInt += 1;
         Debug.Log("MiniMap Active");
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(mapDisabler) && miniMapActive == true)
+        if (Input.GetKeyDown(mapDisabler) && miniMapInt == 1)
         {
             miniMapDisplay.SetActive(false);
-            miniMapActive = false;
+            miniMapPanel.SetActive(false);
+            miniMapInt += 1;
             Debug.Log("Minimap inactive");
         }
-        if (Input.GetKeyDown(mapDisabler) && miniMapActive == false)
+        else if (Input.GetKeyDown(mapDisabler) && miniMapInt == 2)
         {
             miniMapDisplay.SetActive(true);
-            miniMapActive = true;
+            miniMapPanel.SetActive(true);
+            miniMapInt -= 1;
             Debug.Log("Map Active");
         }
     }
