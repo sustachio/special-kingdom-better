@@ -1146,7 +1146,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8010729094205432854}
   - component: {fileID: 4062843376095318167}
-  - component: {fileID: 7148030584155344725}
   - component: {fileID: 8022871968482667447}
   m_Layer: 0
   m_Name: NextLevelTrigger
@@ -1222,32 +1221,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!61 &7148030584155344725
-BoxCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5546746510070164601}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
 --- !u!114 &8022871968482667447
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1260,8 +1233,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0f6ea7305985f4606b5ddf3e51ccb7fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerInZone: 0
   levelToLoad: 
+  player: {fileID: 0}
 --- !u!1 &6228242459563097918
 GameObject:
   m_ObjectHideFlags: 0

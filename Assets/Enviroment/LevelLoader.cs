@@ -1,52 +1,30 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class LevelLoader : MonoBehaviour
 {
 
-    public bool playerInZone;
+    private bool playerInZone;
 
     public string levelToLoad;
+
+    private BoxCollider2D bc2D;
 
     // Start is called before the first frame update
     void Start()
     {
-        playerInZone = false;
+        Debug.Log("Adding components");
+        bc2D = gameObject.AddComponent<BoxCollider2D>() as BoxCollider2D;
+        bc2D.size = new Vector2(1f, 1f);
+        bc2D.isTrigger = true;
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnTriggerEnter2D(Collider2D col)
     {
-        if (playerInZone)
-        {
-            Application.LoadLevel(levelToLoad);
-        }
-    }
-
-    void OnTriggerEnter(Collider other)
-    {
-        if (other.name == "Player")
-        {
-            playerInZone = true;
-        }
-        if (other.name == "PlayerBody")
-        {
-            playerInZone = true;
-        }
-    }
-
-    void OnTriggerExit(Collider other)
-    {
-        if (other.name == "Player")
-        {
-            playerInZone = false;
-        }
-
-        if (other.name == "Player 1")
-        {
-            playerInZone = false;
-        }
+        Debug.Log("GameObject entered: " + gameObject.name + " move into new level");
+        SceneManager.LoadScene(levelToLoad);
     }
 
 }
