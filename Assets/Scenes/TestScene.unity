@@ -5556,7 +5556,7 @@ GameObject:
   - component: {fileID: 648637625}
   - component: {fileID: 648637624}
   - component: {fileID: 648637623}
-  m_Layer: 0
+  m_Layer: 3
   m_Name: Road
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -19649,6 +19649,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3649935747959517270, guid: 6df857137df84422f868c88ef939a635, type: 3}
+      propertyPath: car
+      value: 
+      objectReference: {fileID: 317465167704362691, guid: f64e0f0f4cc46804d9cc704b2d9a0d05, type: 3}
     - target: {fileID: 5176268390849591881, guid: 6df857137df84422f868c88ef939a635, type: 3}
       propertyPath: m_JumpForce
       value: 400
