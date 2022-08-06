@@ -31,7 +31,7 @@ public class FloorActivate : MonoBehaviour
     {
         currentTime = currentTime + Time.deltaTime;
 
-        if (currentTime == 5 && floorOneSelected == true)
+        if (currentTime <= 5 && floorOneSelected == true)
         {
             Debug.Log("Floor One Active");
             floorOne.SetActive(false);
@@ -39,7 +39,7 @@ public class FloorActivate : MonoBehaviour
             currentTime = 0;
             floorOneSelected = false;
         }
-        if (currentTime == 5 && floorOneSelected == false)
+        if (currentTime <= 5 && floorOneSelected == false)
         {
             Debug.Log("Floor Two Active");
             floorOne.SetActive(true);
