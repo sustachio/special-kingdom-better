@@ -14,7 +14,7 @@ public class FlipOnButtonPress : MonoBehaviour
     float distance;
 
     // 1 is up -1 is down
-    float facing = 1;
+    public float facing = 1;
 
     void Update()
     {

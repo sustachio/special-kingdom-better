@@ -815,8 +815,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f29d03533dc4449ed9eb71811eec08d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flip: {fileID: 7757791889870740904}
   m_JumpForce: 350
-  m_CrouchSpeed: 0.36
   m_MovementSmoothing: 0.05
   m_AirControl: 1
   m_WhatIsGround:
@@ -824,11 +824,7 @@ MonoBehaviour:
     m_Bits: 64
   m_GroundCheck: {fileID: 5176268390625099013}
   m_CeilingCheck: {fileID: 5176268390790293787}
-  m_CrouchDisableCollider: {fileID: 0}
   OnLandEvent:
-    m_PersistentCalls:
-      m_Calls: []
-  OnCrouchEvent:
     m_PersistentCalls:
       m_Calls: []
 --- !u!114 &5176268390849591880
@@ -843,9 +839,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72b71d95f8d9f42748330b00233eed64, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  flip: {fileID: 7757791889870740904}
   controller: {fileID: 5176268390849591881}
-  hitGroundParticles: {fileID: 0}
-  runSpeed: 60
 --- !u!61 &5176268390849591883
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -906,6 +901,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kSwapKey: 105
+  facing: 1
 --- !u!1 &5176268391102217609
 GameObject:
   m_ObjectHideFlags: 0
