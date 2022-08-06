@@ -19752,6 +19752,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1488767626 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5176268390849591879, guid: 6df857137df84422f868c88ef939a635, type: 3}
+  m_PrefabInstance: {fileID: 5176268390903098626}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1488767635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488767626}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 187ab1d804281470384d15b3e7e7426c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  miniMapDisplay: {fileID: 1567151357}
+  miniMapPanel: {fileID: 1689390861}
+  miniMapActive: 0
+  mapDisabler: 9
 --- !u!1 &1501296790
 GameObject:
   m_ObjectHideFlags: 0
@@ -21274,7 +21295,7 @@ GameObject:
   - component: {fileID: 1689390864}
   - component: {fileID: 1689390863}
   m_Layer: 5
-  m_Name: MainPanel
+  m_Name: MiniMapPanel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
