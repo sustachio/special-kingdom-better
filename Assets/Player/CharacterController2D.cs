@@ -5,6 +5,8 @@ using UnityEngine.Events;
 public class CharacterController2D : MonoBehaviour
 {
 	public FlipOnButtonPress flip;
+	// compare to flip.facing to dect changes so it can flip
+	float last = 1;
 
 	[SerializeField] private float m_JumpForce = 400f;                          // Amount of force added when the player jumps.
 	[Range(0, .3f)] [SerializeField] private float m_MovementSmoothing = .05f;  // How much to smooth out the movement
@@ -39,6 +41,12 @@ public class CharacterController2D : MonoBehaviour
 	private void FixedUpdate()
 	{
 		m_JumpForce = 400f * flip.facing;
+		// if you changed directions
+		if (flip.facing != last)
+        {
+			last = flip.facing;
+			m_FacingRight = !m_FacingRight;
+		}
 
 		bool wasGrounded = m_Grounded;
 		m_Grounded = false;
@@ -93,7 +101,7 @@ public class CharacterController2D : MonoBehaviour
 	}
 
 
-	private void Flip()
+	public void Flip()
 	{
 		// Switch the way the player is labelled as facing.
 		m_FacingRight = !m_FacingRight;

@@ -901,6 +901,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   kSwapKey: 105
+  controller: {fileID: 5176268390849591881}
   facing: 1
 --- !u!1 &5176268391102217609
 GameObject:
