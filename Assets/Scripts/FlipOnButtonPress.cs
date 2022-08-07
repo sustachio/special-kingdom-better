@@ -38,6 +38,9 @@ public class FlipOnButtonPress : MonoBehaviour
             GetComponent<Rigidbody2D>().gravityScale *= -1;
             timeLeft = 0;
 
+            // set rotation if change didn't get to exectly 1
+            transform.rotation = Quaternion.Euler(0, 0, (180f * -((facing - 1) / 2) + 180f));
+
             facing *= -1;
         }
         if (Input.GetKeyDown(kSwapKey))
