@@ -35,4 +35,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tokyo.unity
     guid: e7abcb0924ea1864d92f3a6b0e0a3ae3
+  - enabled: 1
+    path: Assets/Scenes/Greece.unity
+    guid: bbcbe70450eb449bfb0a7ec2321f58d7
   m_configObjects: {}
