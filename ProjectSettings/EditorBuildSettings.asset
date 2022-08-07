@@ -20,4 +20,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Tutorial.unity
     guid: 30de7affdd5b1644fbb69a42a3524a4f
+  - enabled: 1
+    path: Assets/Scenes/Middle east.unity
+    guid: d19aabc538dd291428cdbd2677156f73
+  - enabled: 1
+    path: Assets/Scenes/Ireland.unity
+    guid: 9f4ca3d30fdb74a1d8f22c99e0e0cce3
   m_configObjects: {}

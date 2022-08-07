@@ -844,7 +844,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4231152621c7f4bf6b1c52c6c088a7a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyPadNum: 
+  keyPadNum: Middle east
   putNumberText: {fileID: 1234677378}
 --- !u!114 &392633492
 MonoBehaviour:
@@ -2675,7 +2675,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4231152621c7f4bf6b1c52c6c088a7a3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  keyPadNum: 
+  keyPadNum: Ireland
   putNumberText: {fileID: 1234677378}
 --- !u!114 &1314811209
 MonoBehaviour:
