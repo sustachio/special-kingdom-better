@@ -9,7 +9,6 @@ public class Timer : MonoBehaviour
     [SerializeField] float StartTime;
     float currentTime;
     [SerializeField] Text timerText;
-    [SerializeField] Text highscorePerLevelText;
 
     private int hasVisited = 0;
 
@@ -23,10 +22,6 @@ public class Timer : MonoBehaviour
             hasVisited += 1;
             PlayerPrefs.SetInt("HasVisitedLevel", hasVisited);
             PlayerPrefs.SetFloat(SceneManager.GetActiveScene().name, 30.000f);
-        }
-        if (PlayerPrefs.GetInt("HasVisitedLevel") == 1)
-        {
-            highscorePerLevelText.text = PlayerPrefs.GetFloat(SceneManager.GetActiveScene().name).ToString();
         }
     }
 
