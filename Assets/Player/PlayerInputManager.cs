@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class PlayerInputManager : MonoBehaviour
 {
     [SerializeField] GameObject miniMapDisplay;
-    [SerializeField] GameObject miniMapPanel;
+    public GameObject miniMapPanel;
     [SerializeField] int miniMapInt;
 
     [SerializeField] KeyCode mapDisabler;

@@ -13,6 +13,8 @@ public class SettingsMenu : MonoBehaviour
 
     Resolution[] resolutions;
 
+    [SerializeField] PlayerInputManager playerInputManager;
+
     private void Start()
     {
         resolutions = Screen.resolutions;
@@ -60,4 +62,8 @@ public class SettingsMenu : MonoBehaviour
         Screen.fullScreen = isFullscreen;
     }
 
+    public void MiniMapDisabler()
+    {
+        playerInputManager.miniMapPanel.SetActive(false);
+    }
 }
