@@ -121,7 +121,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4989471302390790559}
   - component: {fileID: 7313753490878958311}
-  - component: {fileID: 8816633118100420878}
   m_Layer: 0
   m_Name: MiniCampCam
   m_TagString: Untagged
@@ -187,14 +186,6 @@ Camera:
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
---- !u!81 &8816633118100420878
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 564853551874235303}
-  m_Enabled: 1
 --- !u!1 &918138209373642516
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,6 +711,7 @@ GameObject:
   - component: {fileID: 5176268390849591882}
   - component: {fileID: 7757791889870740904}
   - component: {fileID: 3649935747959517270}
+  - component: {fileID: 1125221966907021250}
   m_Layer: 0
   m_Name: PlayerBody
   m_TagString: Player
@@ -917,6 +909,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   car: {fileID: 317465167704362691, guid: f64e0f0f4cc46804d9cc704b2d9a0d05, type: 3}
   lightning: {fileID: 1845412162770597951, guid: 3bfd1a555b99e094da372a1ee418e628, type: 3}
+--- !u!114 &1125221966907021250
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5176268390849591879}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 187ab1d804281470384d15b3e7e7426c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  miniMapDisplay: {fileID: 0}
+  miniMapPanel: {fileID: 0}
+  miniMapInt: 0
+  mapDisabler: 0
 --- !u!1 &5176268391102217609
 GameObject:
   m_ObjectHideFlags: 0

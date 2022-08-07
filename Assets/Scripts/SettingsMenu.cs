@@ -61,9 +61,4 @@ public class SettingsMenu : MonoBehaviour
     {
         Screen.fullScreen = isFullscreen;
     }
-
-    public void MiniMapDisabler()
-    {
-        playerInputManager.miniMapPanel.SetActive(false);
-    }
 }
