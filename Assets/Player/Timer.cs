@@ -9,7 +9,8 @@ public class Timer : MonoBehaviour
     [SerializeField] float StartTime;
     float currentTime;
     [SerializeField] Text timerText;
-    [SerializeField] Text deathText;
+    [SerializeField] GameObject DeathSquare;
+    Vector2 playerPosition;
 
     private int hasVisited = 0;
 
@@ -17,6 +18,7 @@ public class Timer : MonoBehaviour
     void Start()
     {
         currentTime = StartTime;
+        playerPosition = gameObject.transform.position;
 
         if (hasVisited == 0)
         {
@@ -29,11 +31,12 @@ public class Timer : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        playerPosition = gameObject.transform.position;
         TimerManager();
         if (currentTime <= 0)
         {
+            Instantiate(DeathSquare, playerPosition, Quaternion.identity);
             Time.timeScale = 0;
-            deathText.text = "Press R to Restart";
         }
     }
 
