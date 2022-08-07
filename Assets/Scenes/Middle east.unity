@@ -5082,7 +5082,7 @@ Transform:
   - {fileID: 434285256}
   - {fileID: 741206703}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1377882506
 GameObject:
@@ -8504,6 +8504,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 714f74c0fa8c94614a0d1e4840a4d4d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartTime: 0
+  StartTime: 30
   timerText: {fileID: 1106945314}
   DeathSquare: {fileID: 1939660191}
