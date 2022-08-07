@@ -11,11 +11,11 @@ public class Death : MonoBehaviour
     {
         if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Road"))
         {
-            Instantiate(car, new Vector3(-25, -3, 0), Quaternion.identity);
+            Instantiate(car, new Vector3(transform.position.x - 25, transform.position.y+4, 0), Quaternion.identity);
         } 
         else if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Cloud"))
         {
-            Instantiate(lightning, new Vector3(-25, 38, 0), Quaternion.identity);
+            Instantiate(lightning, new Vector3(transform.position.x-25, transform.position.y, 0), Quaternion.identity);
         }
         if (collision.collider.gameObject.layer == LayerMask.NameToLayer("Car"))
         {
