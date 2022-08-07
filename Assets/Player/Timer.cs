@@ -9,6 +9,7 @@ public class Timer : MonoBehaviour
     [SerializeField] float StartTime;
     float currentTime;
     [SerializeField] Text timerText;
+    [SerializeField] Text deathText;
 
     private int hasVisited = 0;
 
@@ -31,7 +32,8 @@ public class Timer : MonoBehaviour
         TimerManager();
         if (currentTime <= 0)
         {
-            Destroy(gameObject);
+            Time.timeScale = 0;
+            deathText.text = "Press R to Restart";
         }
     }
 
@@ -43,8 +45,7 @@ public class Timer : MonoBehaviour
     void TimerManager()
     {
         currentTime -= Time.deltaTime;
-        currentTime.ToString();
-        timerText.text = currentTime.ToString();
+        timerText.text = (Mathf.Round(currentTime * 10) / 10).ToString();
     }
 
     public void TimeSaver()
