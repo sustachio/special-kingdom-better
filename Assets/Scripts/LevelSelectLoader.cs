@@ -10,19 +10,11 @@ public class LevelSelectLoader : MonoBehaviour
     [SerializeField] string keyPadNum;
     [SerializeField] TMPro.TMP_Text putNumberText;
 
-    int q = 1;
-
     // Start is called before the first frame update
     void Start()
     {
         levelButton = gameObject.GetComponent<Button>();
         levelButton.onClick.AddListener(ExecuteNewLevel);
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 
     public void ExecuteNewLevel()
